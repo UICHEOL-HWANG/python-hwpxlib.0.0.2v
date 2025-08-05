@@ -58,3 +58,9 @@ print(response.json())
 }
 ```
 
+---
+
+## 📄 라이선스
+
+이 프로젝트는 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)에 따라 라이선스가 부여됩니다.
+
