@@ -1,0 +1,25 @@
+services:
+  hwpx-api:
+    build: .
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - LANG=ko_KR.UTF-8
+      - LANGUAGE=ko_KR.UTF-8
+      - LC_ALL=ko_KR.UTF-8
+    restart: unless-stopped
+    container_name: hwpx-parser
+    networks:
+      - llm
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  llm:
+    external: true
