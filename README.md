@@ -2,7 +2,7 @@
 
 # HWPX Parser API
 
-[한국어](./REAME_ko.md) | [English](./README.md)
+[한국어](./README_ko.md) | [English](./README.md)
 
 
 
