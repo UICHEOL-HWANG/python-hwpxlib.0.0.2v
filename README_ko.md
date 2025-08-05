@@ -2,7 +2,7 @@
 
 # HWPX 파서 API
 
-[한국어](./README.ko.md) | [English](./README.md)
+[한국어](./README_ko.md) | [English](./README.md)
 
 > 이 프로젝트는 [python-hwpxlib](https://github.com/choijhyeok/python-hwpxlib)의 구조를 개선하여 FastAPI 기반으로 리팩토링한 HWPX 파서입니다. 더 편리하게 `.hwpx` 파일을 처리하고 연동할 수 있도록 설계되었습니다.
 
@@ -57,3 +57,4 @@ print(response.json())
     "text": "이것은 추출된 HWPX 문서의 본문 텍스트입니다.\n여러 문단이 포함될 수 있습니다.\n표, 리스트, 각주 등도 함께 처리됩니다."
 }
 ```
+
