@@ -11,8 +11,7 @@ services:
       - LC_ALL=ko_KR.UTF-8
     restart: unless-stopped
     container_name: hwpx-parser
-    networks:
-      - llm
+
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:7860/"]
       interval: 30s
@@ -20,6 +19,3 @@ services:
       retries: 3
       start_period: 40s
 
-networks:
-  llm:
-    external: true
